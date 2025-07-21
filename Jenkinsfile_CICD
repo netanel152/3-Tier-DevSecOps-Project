@@ -25,7 +25,7 @@ pipeline {
         
         stage('Backend Compilation') {
             steps {
-                dir('api') {
+                dir('server') {
                     sh 'find . -name "*.js" -exec node --check {} +'
                 }
             }
@@ -34,7 +34,7 @@ pipeline {
         stage('GitLeaks Scan') {
             steps {
                 sh 'gitleaks detect --source ./client --exit-code 1'
-                sh 'gitleaks detect --source ./api --exit-code 1'
+                sh 'gitleaks detect --source ./server --exit-code 1'
             }
         }
         
