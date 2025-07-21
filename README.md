@@ -1,6 +1,6 @@
 # 3-Tier DevSecOps User Management Demo 📝
 
-This repository contains a simple Node.js API and a React client to demonstrate a basic user management application. This project serves as a practical example of a 3-tier architecture within a DevSecOps pipeline.
+This repository contains a simple Node.js Server and a React client to demonstrate a basic user management application. This project serves as a practical example of a 3-tier architecture within a DevSecOps pipeline.
 
 ## Getting Started
 
@@ -23,9 +23,9 @@ Before you begin, ensure you have the following installed on your system:
     ```
 
 2.  **Install Backend Dependencies:**
-    Navigate to the API directory and install the required packages.
+    Navigate to the Server directory and install the required packages.
     ```bash
-    cd api
+    cd server
     npm install
     ```
 
@@ -38,27 +38,27 @@ Before you begin, ensure you have the following installed on your system:
 
 ## Running the Application 🏃‍♂️
 
-You will need **two separate terminal windows** to run both the backend API and the frontend client simultaneously.
+You will need **two separate terminal windows** to run both the backend Server and the frontend Client simultaneously.
 
 ---
 
-### **Terminal 1: Start the Backend API**
+### **Terminal 1: Start the Backend Server**
 
-1.  Navigate to the `api` directory from the project root.
+1.  Navigate to the `Server` directory from the project root.
     ```bash
-    cd api
+    cd server
     ```
 2.  Run the start command.
     ```bash
     npm start
     ```
-    > The API will now be running on [http://localhost:8080](http://localhost:8080).
+    > The Server will now be running on [http://localhost:8080](http://localhost:8080).
 
 ---
 
 ### **Terminal 2: Start the Frontend Client**
 
-1.  In a new terminal, navigate to the `client` directory from the project root.
+1.  In a new terminal, navigate to the `Client` directory from the project root.
     ```bash
     cd client
     ```

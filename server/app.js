@@ -7,7 +7,7 @@ require('dotenv').config();
 
 const userRoutes = require('./routes/userRoutes');
 const authRoutes = require('./routes/authRoutes');
-const db = require('./models/db'); // MySQL pool connection
+const db = require('./models/db');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -17,8 +17,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Routes
-app.use('/api/auth', authRoutes);
-app.use('/api/users', userRoutes);
+app.use('/server/auth', authRoutes);
+app.use('/server/users', userRoutes);
 
 // Function to wait until MySQL is ready
 const waitForDb = async (retries = 30, delay = 2000) => {
